@@ -1,0 +1,8 @@
+html * {
+    font-family: sans-serif;
+    background-color: rgb(216, 205, 205);
+}
+
+img {
+    max-width: 50px;
+}
