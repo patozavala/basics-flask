@@ -7,10 +7,13 @@
 {% endblock %}
 
 {%block content %}
+    {%if username%}
+        <h1> Welcome!, {{username | capitalize}}
+    {% endif %}
     {% if user_ip %}
         <h1> Hello World Platzi, your IP is {{user_ip}} </h1>
     {%else%}
-        <a href="{{url_for('index')}}"> Go Home </a>
+        <a href='{{url_for('index')}}'> Go Home </a>
     {% endif %}
 
     <div class='container'>
